@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Mail Beispiel</title>
+</head>
+<style>
+    #div-logo{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        background-color: white;
+        place-items: center;
+    }
+    #div-content{
+        width: 100%;
+        height: 1000px;
+        background-color: rgb(126, 126, 126);
+    }
+    #div-h1{
+        width: 100%;
+        background-color: black;
+        display: grid;
+        justify-content: center;
+        padding: 20px 0 20px 0;
+    }
+    body{
+        background-color: grey;
+        /*width: 600px;*/
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        overflow-x: hidden;
+
+    }
+    h1{
+        color: white;
+        background-color: black;
+        z-index: 2;
+        padding: 0;
+        margin: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #background{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        display:none;
+    }
+    body div{
+        z-index: 0;
+    }
+    #logo{
+        width: 40%;
+    }
+
+</style>
+<body style="margin: 0; padding: 0;">
+    <div id="div-logo">
+        <img src="GBYDEV5-final.svg" alt="logo" id="logo">
+    </div>
+    <div id="div-h1">
+        <h1>GBYDE Newsletter</h1>
+    </div>
+    <div id="div-content">
+        <img src="visitebackground.svg" alt="background" id="background">
+
+    </div>
+  </body>
