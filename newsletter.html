@@ -19,9 +19,10 @@
           width: 100%;
           z-index: 2;
           color: white;
+          font-size: 15px;
           /*background-color: rgb(255, 255, 255);*/
           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+          background-color: #212121;
 
       }
 
@@ -35,7 +36,8 @@
       #div-content-3{
         background-color: #141414;
         width: 100%;
-        height: 300px;
+        height: auto;
+        font-size: 13px;
       }
       #div-content-bg{
         background-color: #212121;
@@ -43,17 +45,17 @@
         height: fit-content;
         position: absolute;
         z-index: -1;
-        margin-top: calc(100%-90%);
+        margin-top: 100px;
         max-width: 600px;
       }
-      #color{
+      /*#color{
         width: 100%;
-        height: 600px;
+        height: 100%;
         position: absolute;
-        background-color: #212121;;
+        background-color: #212121;
         z-index: -1;
         max-width: 600px;
-      }
+      }*/
       #div-h1{
           width: 100%;
           background-color: #000000;
@@ -85,16 +87,63 @@
           width: 100%;
           float: right;
           max-width: 600px;
-          /*display: none;*/
+          display: none;
 
       }
       body div{
           z-index: 0;
       }
+      h2{
+        color: #00ACA0;
+        font-size: 15px;
+      }
+      span{
+        color: #00ACA0;
+        font-size: 25px;
+        
+      }
       #logo{
           width: 150px;
           padding: 0;
           margin: -50px 0 10px 0;
+      }
+      #button-text{
+        font-style: none;
+        color: white;
+        text-decoration: none;
+      }
+      button{
+        background-color: #004346;
+        border: 3px transparent;
+        padding: 10px 30px 10px 25px;
+        border-radius: 5px;
+        transition: all 0.5s;
+        font-size: 16px;
+      }
+      button:hover{
+        /*filter: drop-shadow(0px 0px 5px #508991);*/
+        scale: 1.1;
+        cursor: pointer;
+      }
+      #div-button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0 20px 0;
+      }
+      p{
+        width: 90%;
+      }
+      #div-footer{
+        flex-wrap: wrap;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      #div-footer a{
+        text-decoration: none;
+        color: white;
+        margin: 30px;
       }
   
   </style>
@@ -103,7 +152,7 @@
           <img src="GBYDEV5-final.svg" alt="logo" id="logo">
       </div>
       <div id="div-h1">
-          <h1>WILLKOMMEN</h1>
+          <h1>Auf zu neuen Höhen!</h1>
       </div>
       <div id="div-content">
         <div id="color"></div>
@@ -111,24 +160,48 @@
             <img src="background.png" alt="background" id="background">
         </div>
           <div id="div-content-1">
-            <span>bei unserem Cloud-Hosting-Service!</span>
+            <h2>Updates von GBYDE-Networks</h2>
           </div>
           <div id="div-content-2">
-            <p>Unsere Vorteile:</p>
-            <ul>
-                <li>Schnelle und zuverlässige Server</li>
-                <li>Sicherheitsfunktionen auf höchstem Niveau</li>
-                <li>Einfache Skalierbarkeit nach Bedarf</li>
-                <li>24/7 Kundensupport</li>
-            </ul>
-                      <p>Bereit, Ihre Online-Präsenz zu verbessern? Starten Sie noch heute!</p>
-          <a href="Link-zu-Ihrer-Website" class="cta-button">Jetzt loslegen</a>
+            <h3>Liebe GBYDE-Fans:</h3>
+            <p>wir hoffen, dieser Newsletter erreicht euch in bester Verfassung. 
+              Bei CloudSprint sind wir stets bemüht, eure Hosting-Erfahrung zu verbessern, und wir freuen uns, euch die
+               neuesten Updates und Innovationen vorstellen zu dürfen.</p>
+                      <h2>Servergeschwindigkeit auf Turboboost:</h2>
+                      <p>Unsere Ingenieure haben an den Servern geschraubt, und das Ergebnis ist beeindruckend! 
+                        Genießt eine blitzschnelle Ladezeit für eure Webseiten und Anwendungen. 
+                        Schnelligkeit war noch nie so stilvoll!</p>
+                        <br>
+                        <h2>Datenbank-Optimierung für Spitzenleistung:</h2>
+                        <p>Eure Daten verdienen die beste Behandlung. Daher haben wir unsere Datenbanken optimiert,
+                           um maximale Leistungsfähigkeit zu gewährleisten. 
+                          Schnelle Abfragen und reibungslose Datenverwaltung sind ab jetzt Standard!
+                        </p>
+                        <h2>Globale Verfügbarkeit - Überall erreichbar:</h2>
+                        <p>Wir haben unsere Serverstandorte erweitert, 
+                          um eine globale Reichweite sicherzustellen. Eure Inhalte sind jetzt überall auf der 
+                          Welt in Windeseile verfügbar.</p>
+                          <br><br>
+                          <p>
+                            Seid gespannt auf diese aufregenden Verbesserungen und aktualisiert eure Einstellungen, 
+                            um das Beste aus GBYDE herauszuholen. Wir sind überzeugt, 
+                            dass diese Updates eure Hosting-Erfahrung auf ein neues Niveau heben werden.
+                          </p>
+                      
+                      <div id="div-button">
+                        <button><a href="https://gbyde.net" id="button-text" target="_blank">Dashboard öffnen</a></button>
+                      </div>
           <p>Bei Fragen oder Unterstützungsbedarf stehen wir Ihnen jederzeit zur Verfügung.</p>
-          <p>Mit freundlichen Grüßen,<br>Ihr Cloud-Hosting-Team</p>
+          <p>Mit freundlichen Grüßen,<br>Ihr GBYDE-Team</p>
 
           </div>
           <div id="div-content-3">
-
+            <div id="div-footer">
+              <a href="https://gbyde.net">Kontakt</a>
+              <a href="https://gbyde.net">Impressum</a>
+              <a href="https://gbyde.net">Newsletter deabonnieren</a>
+  
+            </div>
           </div>
 
       </div>
