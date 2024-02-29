@@ -4,7 +4,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Mail Beispiel</title>
+    <title>GBYDE - Newsletter</title>
+    <link rel="icon" type="x-icon" href="GBYDE-V5.png">
   </head>
   <style>
       #div-logo{
@@ -31,7 +32,7 @@
         padding: 0 0 10px 0;
       }
       .div-content-2{
-        margin: 0 40px 40px 20px;
+        margin: 0 20px 40px 20px;
       }
       #div-content-3{
         background-color: #141414;
@@ -48,14 +49,6 @@
         margin-top: 100px;
         max-width: 600px;
       }
-      /*#color{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background-color: #212121;
-        z-index: -1;
-        max-width: 600px;
-      }*/
       #div-h1{
           width: 100%;
           background-color: #000000;
@@ -96,6 +89,7 @@
       h2{
         color: #00ACA0;
         font-size: 15px;
+        padding: 10px 0 10px 0;
       }
       span{
         color: #00ACA0;
@@ -130,7 +124,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        padding: 20px 0 20px 0;
+        align-items: center;
       }
       p{
         width: 90%;
@@ -158,24 +152,27 @@
         max-width: 100%;
       }
       #div-footer img{
-        width: 30px;
+        width: 20px;
         background-color: white;
-        padding: 5px;
-        border-radius: 10px;
+        padding: 10px;
+        border-radius: 100%;
         margin: 0 30px 0 30px;
       }
 
   
   </style>
   <body style="margin: 0; padding: 0;">
+
+    <!--https://github.com/The-GreenCraft/E-Mail-Newsletter-->
+
+
       <div id="div-logo">
-          <img src="GBYDEV5-final.svg" alt="logo" id="logo">
+          <img src="GBYDEV5-final.png" alt="logo" id="logo">
       </div>
       <div id="div-h1">
           <h1>Auf zu neuen Höhen!</h1>
       </div>
       <div id="div-content">
-        <div id="color"></div>
         <div id="div-content-bg">
             <img src="background.png" alt="background" id="background">
         </div>
@@ -204,7 +201,10 @@
                           Welt in Windeseile verfügbar.</p>
                           </div>
                           <br>
-                          <img src="banner-bottom.png" alt="bottom-banner">
+                          <div id="div-content-1">
+                            <img src="banner-bottom.png" alt="bottom-banner" id="banner">
+                          </div>
+                          
                           <div class="div-content-2">
                           <p>
                             Seid gespannt auf diese aufregenden Verbesserungen und aktualisiert eure Einstellungen, 
